@@ -1,0 +1,69 @@
+ // sneakers
+
+.sneakers-mainvisual {
+  background-image: url(../img/sneakers-main.jpg);
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  padding: 403px 20px;
+  object-fit: cover;
+}
+
+.secondlayer-image {
+  margin-top: 80px;
+}
+
+.secondlayer-container {
+  margin-top: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 2.4rem;
+}
+
+.secondlayer-container dt {
+  width: 22%;
+  font-weight: bold;
+  padding-left: 90px;
+}
+
+.secondlayer-container dt:not(:first-child) {
+  margin-top: 66px;
+}
+
+.secondlayer-container dd {
+  width: 78%;
+  padding-left: 54px;
+}
+
+.secondlayer-container dd:nth-of-type(2) {
+  margin-top: 70px;
+}
+
+.secondlayer-container dd:nth-of-type(3) {
+  margin-top: 66px;
+}
+
+.secondlayer-container dd:nth-of-type(4) {
+  margin-top: 66px;
+}
+
+.secondlayer-button {
+  text-align: center;
+  margin-top: 80px; 
+  padding-bottom: 108px;
+}
+
+.secondlayer-button input {
+width: 188px;
+height: 60px;
+background-color: #339C64;
+color: #fff;
+border-radius: 10px;
+margin-top: 48px;
+}
+
+.secondlayer-button input:hover {
+background-color: #fff;
+color: #339C64;
+border: 1px solid #339C64;
+}

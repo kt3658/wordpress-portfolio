@@ -1,0 +1,25 @@
+.header {
+  width: 100%;
+  position: fixed;
+  z-index: 20;
+  background-color: #fff;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-ul {
+  display: flex;
+  li {
+    margin-left: 24px;
+  }
+}
+
+
+.header-btn,
+.header-mask {
+  display: none;
+}

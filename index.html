@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="後で" name="description">
+    <title>Ken | Web Portfolio</title>
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <!-- <link rel="stylesheet" href="css/style.css">  -->
+    <link rel="stylesheet" href="css/style.min.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.7/swiper-bundle.css">
+  </head>
+
+  <body>
+
+    <header id="js-header" class="header">
+      <div class="wrapper header-container">
+        <h1 class="site-title">
+          <a href="index.html">KEN PORTFORIO</a>
+        </h1>
+  
+        <nav class="header-nav" id="js-header-nav">
+          <ul class="header-ul">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#js-service">Service</a></li>
+            <li><a href="#js-about">About</a></li>
+            <li><a href="#js-works">Works</a></li>
+            <li><a href="#js-contact">Contact</a></li>
+          </ul>
+        </nav>
+        
+        <div class="header-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+  
+        <div id="js-header-mask" class="header-mask">
+        </div>
+      </div>
+    </header>
+
+    <main>
+
+      <div class="mainvisual">
+        <div class="mainvisual-container wrapper">
+          <img src="img/mainvisual.png" alt="メインモックアップ" width="612" height="380">
+          <div class="mainvisual-textunit">
+            <h2 class="mainvisual-title">KEN<br>PORTFORIO</h2>
+            <p class="mainvisual-text">傾聴を重視し、お客様のご満足のいくサイトをお<br>作り出来るよう心掛けています。</p>
+          </div>
+        </div>
+      </div>
+      
+      <section id="js-service" class="service wrapper fadein">
+        <h2 class="section-title">
+          <span class="en">Service</span>
+          <span class="ja">出来ること</span>
+        </h2>
+        
+        <ul class="service-container slidebottom show">
+          <li class="service-list hide">
+            <img class="service-image" src="img/service-01.svg" alt="サイト制作" width="152" height="120">
+            <h3 class="service-title">サイト制作</h3>
+            <P class="service-text">デザインカンプを正確に再現致<br>します。<br>
+              レスポンシブデザインにより、<br>スマートフォンやタブレットに<br>対応させることが出来ます。</P>
+          </li>
+          <li class="service-list hide">
+            <img class="service-image" src="img/service-02.svg" alt="アニメーション" width="152" height="120">
+            <h3 class="service-title">アニメーション</h3>
+            <P class="service-text">サイトにアニメーションを使っ<br>て動きをつけます。<br>
+              スクロールに応じたアニメー<br>ション,ハンバーガーメニュー,<br>アコーディオンなど実装可能で<br>す。</P>
+          </li>
+          </li>
+          <li class="service-list hide">
+            <img class="service-image" src="img/service-03.svg" alt="WordPress構築" width="152" height="120">
+            <h3 class="service-title">WordPress構築</h3>
+            <P class="service-text">WordPressでオリジナルテー<br>マを作成致します。<br>
+              既存サイトのWordPress化も<br>可能です。<br>また、状況に応じてカスタム<br>フィールドなども扱います。</P>
+          </li>
+          </li>
+        </ul>
+      </section>
+
+      <section id="js-about" class="about fadein">
+        <div class="wrapper">
+          <h2 class="section-title">
+            <span class="en">About</span>
+            <span class="ja">私について</span>
+          </h2>
+
+          <div class="about-container">
+            <img class="about-image" src="img/about-01.jpg" alt="私の似顔絵" width="320" height="400">
+            <div class="about-textunit">
+              <p class="about-name">名前：KEN</p>
+              <p class="about-text">福岡県出身の35歳。事務職で働く傍ら、web制作をしています。
+                (デザインは専門外です。)<br>
+                コードを書く楽しさから、学習・創作に打ち込むようになりました。<br>
+                お困りの方を助けることの出来る存在でありたいです。よろしくお願い致します。
+              </p>
+              <h4 class="about-qa">Q＆A</h4>
+
+              <div class="accordion-container">
+                <div class="accordion-tab">
+                  趣味は？
+                </div>
+                <div class="accordion-content">
+                  <p>・読書・街巡り・お店巡り・旅行・音楽鑑賞・ゲームなど。</p>
+                </div>
+                  <div class="accordion-tab">
+                  長所は？
+                </div>
+                <div class="accordion-content">
+                  <p>・集中力があります。・知的好奇心が強いです。</p>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="js-works" class="works wrapper fadein">
+        <h2 class="section-title">
+          <span class="en">Works</span>
+          <span class="ja">制作実績</span>
+        </h2>
+        
+        <div class="swiper-container">
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide"><img src="img/portfolio-swiper.png" alt="スライド１" width="420" height="360"></div>
+              <div class="swiper-slide"><img src="img/portfolio-swiper2.png" alt="スライド2" width="420" height="360"></div>
+              <div class="swiper-slide"><img src="img/portfolio-swiper3.png" alt="スライド3" width="420" height="360"></div>
+              <div class="swiper-slide"><img src="img/portfolio-swiper4.png" alt="スライド4" width="420" height="360"></div>
+              
+          </div>
+          </div>
+  
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      <div class="works-button"><a href="works.html"><input type="submit" value="もっと見る"></a></div>
+
+      
+      </section>
+
+      <section id="js-contact" class="contact fadein">
+        <div class="wrapper">
+          <h2 class="section-title">
+            <span class="en">Contact</span>
+            <span class="ja">お問い合わせ</span>
+          </h2>
+
+          <div class="contact-container">
+            <form>
+              <dl>
+                <dt><label for="name">お名前<span>*</span></label></dt>
+                <dd><input type="text" id="name" name="your-name" placeholder="山田太郎"></dd>
+                <dt><label for="email">メールアドレス<span>*</span></label></dt>
+                <dd><input type="email" id="email" name="your-email" placeholder="test@gmail.com"></dd>
+                <dt><label for="message">お問い合わせ<span>*</span></label></dt>
+                <dd><textarea id="message" name="your-message" placeholder="お気軽にご相談ください。"></textarea></dd>
+              </dl>
+              <div class="contact-button"><input type="submit" value="送信する"></div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer wrapper">
+      <p>Copyright©2022 KEN portfolio All rights reserved.</p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.7/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    
+  </body>
+</html>
