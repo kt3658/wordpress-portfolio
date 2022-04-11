@@ -5,7 +5,6 @@
 @use "footer";
 @use "worksunder";
 @use "secondlayer";
-@use "responsive";
 
 html {
   font-size: 62.5%;
@@ -15,8 +14,12 @@ body {
   background-color: #fff;
   letter-spacing: 0.08em;
   font-size: 1.6rem;
-  font-family: "Arial", "Hiragino Kaku Gothic ProN", sans-serif;
+  font-family: "Arial","Hiragino Kaku Gothic ProN",sans-serif;
   position: relative;
+  min-width: 1040px;
+  @media screen and (max-width: 750px) {
+    min-width: initial;
+    }
 }
 
 a {
@@ -37,6 +40,9 @@ li {
   font-size: 3.2rem;
   padding: 20px 0;
   font-family:"Helvetica";
+  @media screen and (max-width: 750px) {
+    font-size: 2.2rem;
+    }
 }
 
 .section-title {
@@ -78,6 +84,11 @@ li {
   max-width: 1040px;
   margin: 0 auto;
   padding: 0 20px;
+  @media screen and (max-width: 750px) {
+    max-width: 375px;
+    padding: 0 15px;
+    }
+  
 }
 
 .fadein {

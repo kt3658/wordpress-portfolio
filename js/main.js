@@ -21,7 +21,7 @@ for (let i = 0; i < tabs.length; i++) {
 
 
 var swiper = new Swiper(".swiper", {
-  slidesPerView: 1.75,
+  slidesPerView: 1,
   spaceBetween: 10,
   centeredSlides:true,
   loop:true,
@@ -34,6 +34,12 @@ var swiper = new Swiper(".swiper", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+  breakpoints: {
+    750: {
+      slidesPerView: 1.75,
+      spaceBetween: 10
+    }
+  }
   
 });
 
@@ -101,3 +107,18 @@ $('a[href^="#"]').on('click', function() {
   return false;
 });
 
+
+// ハンバーガーメニュー
+const humbergerMenuBtn = document.querySelector('.header-btn');
+humbergerMenuBtn.addEventListener('click', function(){
+  document.getElementById('js-header').classList.toggle('open');
+});
+
+const maskBtn = document.getElementById('js-header-mask');
+maskBtn.addEventListener('click', function(){
+  document.getElementById('js-header').classList.remove('open');
+});
+
+$('#js-header-nav a').on('click', function() {
+  $('#js-header').removeClass('open');
+});

@@ -7,31 +7,54 @@
   background-position: center top;
   background-repeat: no-repeat;
   padding: 140px 0 40px;
+  @media screen and (max-width: 750px) {
+    padding: 114px 0 40px;
+    }
 }
 
 .mainvisual-container {
   display: flex;
   align-items: center;
+  @media screen and (max-width: 750px) {
+  flex-direction: column-reverse;
+  }
 }
 
 .mainvisual img {
   padding-right: 20px;
+  @media screen and (max-width: 750px) {
+    width: 375px;
+    height: auto;
+    margin-top: 24px;
+    padding-right: 0;
+    }
 }
 
 .mainvisual-textunit {
   margin-left: 8px;
   padding-bottom: 12px;
+  @media screen and (max-width: 750px) {
+    margin-left: 0;
+    }
 }
 
 .mainvisual-title {
   font-size: 5rem;
   font-family:"Helvetica";
+  @media screen and (max-width: 750px) {
+    font-size: 4.2rem;
+    }
 }
 
 
 .mainvisual-text {
   line-height: 24px;
   margin-top: 8px;
+  @media screen and (max-width: 750px) {
+    margin-top: 16px;
+    text-align: justify;
+    font-size: 1.6rem;
+    }
 }
 
 /* service */
@@ -41,6 +64,10 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  @media screen and (max-width: 750px) {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .service-list {
@@ -48,18 +75,31 @@
   border: 0 solid #fff;
   box-shadow: 4px 4px 24px rgb(0 0 0 / 12%);
   border-width: 28px;
+
 }
 
 .service-list:nth-of-type(1) {
   margin-top: 16px;
+  @media screen and (max-width: 750px) {
+    margin-top: 48px;
+    border-width: 52px;
+  }
 }
 .service-list:nth-of-type(2) {
   margin-top: 82px;
+  @media screen and (max-width: 750px) {
+    margin-top: 48px;
+    border-width: 51.7px;
+  }
 }
 
 .service-list:nth-of-type(3) {
   margin-top: 164px;
-  
+  @media screen and (max-width: 750px) {
+    margin-top: 48px;
+    border-width: 49.6px;
+    
+  }
 }
 
 .service-title {
@@ -78,27 +118,47 @@
   margin-top: 96px;
   background-color: #EDF2FA;
   padding-bottom: 72px;
+  @media screen and (max-width: 750px) {
+    margin-top: 79px;
+    padding-bottom: 40px;
+  }
 }
 
 .about-container {
   display: flex;
   padding: 0 60px;
+  @media screen and (max-width: 750px) {
+    flex-direction: column;
+    padding: 0;
+    }
 }
 
 .about-image {
   margin-top: 54px;
   object-fit: cover;
+  @media screen and (max-width: 750px) {
+    width: 345px;
+    height: auto;
+    margin-top: 32px;
+    }
 }
 
 .about-textunit {
   padding-left: 50px;
   margin-top: 40px;
+  @media screen and (max-width: 750px) {
+    padding-left: 0;
+    margin-top: 16px;
+    }
 }
 
 .about-text {
   text-align: justify;
   line-height: 24px;
   margin-top: 8px;
+  @media screen and (max-width: 750px) {
+    margin-top: 16px;
+    }
 }
 
 .about-qa {
@@ -116,6 +176,9 @@
   margin: 8px 0;
   border: 1px solid gainsboro;
   border-bottom: 0;
+  @media screen and (max-width: 750px) {
+    width: 100%;
+    }
 
 }
   
@@ -126,6 +189,9 @@
   border-top: 0;
   border-bottom: 1px solid gainsboro;
   background-color: #fff;
+  @media screen and (max-width: 750px) {
+    padding: 10px 10px;
+    }
 }
   
 .accordion-tab::after {
@@ -143,6 +209,9 @@
   display: none;
   background: #EDF2FA;
   border-bottom: 1px solid gainsboro;
+  @media screen and (max-width: 750px) {
+    padding: 10px 10px;
+    }
 }
 
 .accordion-content.active {
@@ -162,10 +231,18 @@
 .swiper-wrapper {
   margin-top: 60px;
   text-align: center;
+  @media screen and (max-width: 750px) {
+    margin-top: 40px;
+  }
 }
 
 .swiper-slide img {
   object-fit: cover;
+  @media screen and (max-width: 750px) {
+    width: 235px;
+    height: 200px;
+  }
+
 }
 
 .swiper-button-prev {
@@ -183,6 +260,9 @@
 .works-button {
   text-align: center;
   padding-bottom: 87px;
+  @media screen and (max-width: 750px) {
+    padding-bottom: 56px;
+  }
 }
 
 
@@ -215,6 +295,9 @@
   width: 480px;
   margin: 0 auto;
   margin-top: 8px;
+  @media screen and (max-width: 750px) {
+    width: 100%;
+  }
 }
 
 .contact-container dt {
@@ -228,7 +311,7 @@
 
 .contact-container input {
   background-color: #fff;
-  width: 480px;
+  width: 100%;
   height: 48px;
   margin-top: 8px;
   border-radius: 5px;
@@ -236,7 +319,7 @@
 
 .contact-container textarea {
   background-color: #fff;
-  width: 480px;
+  width: 100%;
   height: 140px;
   margin-top: 8px;
   border-radius: 5px;
