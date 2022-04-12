@@ -35,7 +35,7 @@
 .secondlayer-container dt {
   width: 22%;
   font-weight: bold;
-  padding-left: 90px;
+  padding-left: 100px;
   @media screen and (max-width: 750px) {
     padding-left: 0;
     width: 26%;
@@ -48,7 +48,7 @@
 
 .secondlayer-container dd {
   width: 78%;
-  padding-left: 54px;
+  padding-left: 64px;
   @media screen and (max-width: 750px) {
     padding-left: 34px;
     width: 74%;
@@ -72,10 +72,9 @@
 
 .secondlayer-button {
   text-align: center;
-  margin-top: 80px; 
+  margin-top: 52px; 
   padding-bottom: 108px;
   @media screen and (max-width: 750px) {
-    margin-top: 52px;
     padding-bottom: 80px;
   }
 }
